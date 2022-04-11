@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <script src='/script.js'></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>news web app</title>
+  </head>
+  <body>
+    
+    <!-- navbar 1 -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark   fixed-top">
+      <div id="growgreen">
+        <img src="images/icon.png" width="30" height="40" alt="">
+      <a class="navbar-brand"  href="#">
+         
+        GrowGreen.org 
+      </a>
+     
+    </nav>
+     
+    <!-- Image slider   -->
+     <div class="img_slider  mx-0">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+      
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"      aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10">
+            <img class="d-block w-100 " width="300" height="680"  src="images/c1.jfif">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="brand-banner__header">
+                <div>LET'S GIVE EARTH</div>
+                <div>A BRIGHT FUTURE</div>
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10">
+            <img class="d-block w-100" width="300" height="680" src="images/c3.jfif" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="brand-banner__header">
+                <div>LET'S GIVE EARTH</div>
+                <div>A BRIGHT FUTURE</div>
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10">
+            <img class="d-block w-100 "width="300" height="680" src="images/c1.jfif" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="brand-banner__header">
+                <div>LET'S GIVE EARTH</div>
+                <div>A BRIGHT FUTURE</div>
+              </h1>
+            </div>
+          </div>
+          
+          </div>
+           
+          </div>
+        </div> 
+      
+     </div> 
+    
+     <div class="news">
+       <p>PLANT YOUR FAVOURITE PROJECT</p>
+       <hr>
+     </div>
+
+     <!-- flexbox -->
+     <div class="flexcontainer">
+     
+      <div class="row">
+        <div class="card">
+          <img src="images/amla.webp" alt="Avatar" style="width:100%">
+          
+            <h3>Amla</h3>
+            <hr>
+          <div class="card-body">
+            <p>
+              Hurray Amla! Now you can slow down ageing with Amla
+            </p>
+            <a onclick="togglePopup()" id = "plantbtn" href="#" class="btn">PLANT NOW</a>
+          </div>
+        </div>
+        <div class="card">
+          <img id ="guava" src="images/guava.jpg" alt="Avatar" style="width:100% ">
+
+            <h3>Guava</h3>
+            <hr>
+          <div class="card-body">
+            <p>
+              Guava have an all-rounder health beneficial tree.
+            </p>
+            <a onclick="togglePopup()" id = "plantbtn" href="#" class="btn">PLANT NOW</a>
+          </div>
+        </div>
+        <div class="card">
+          <img id ="guava" src="images/peepal.jpg" alt="Avatar" style="width:100%">
+  
+            <h3>Peepal</h3>
+            <hr>
+          <div class="card-body">
+            <p>
+              To all the Cancer borns,plant a Peepal and rejoice holy blessings.
+            </p>
+            <a onclick="togglePopup()" id = "plantbtn" href="#" class="btn">PLANT NOW</a>
+          </div>
+        </div>
+        <div class="card">
+          <img id ="reetha" src="images/reetha.jpeg" alt="Avatar" style="width:100% ">
+
+            <h3>Reetha</h3>
+            <hr>
+          <div class="card-body">
+            <p>
+              Is there any Virgo tired of hair issues? Here’s a natural remedy
+            </p>
+            <a  onclick="togglePopup()" id = "plantbtn" href="#" class="btn">PLANT NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POP UP -->
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <img id ="icon2" src="images/verify.png" alt="">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <h1 id="success">SUCCESS</h1>
+        <p id="placed">Your order has been placed and is being processed...</p>
+      </div>
+    </div>
+     <!-- steps -->
+    <div class="news">
+      <p>PLANT YOUR TREES WITH EASY STEPS</p>
+      <hr>
+    </DIv>
+    <div class="steps">
+      
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-success bg-light">1.  Select any tree or species you wish to plant</li>
+        <li class="list-group-item  text-success">2.  Proceed to receive your tree plantation certificate</li>
+        <li class="list-group-item text-success bg-light ">3.  Your sapling will plant on ground
+        <li class="list-group-item text-success text-success">4.  Track your tree live location</li>
+        <li class="list-group-item text-success bg-light ">5.  Receive updates on its growth</li>
+      </ul>
+    </div>
+    <!-- About us -->
+    <div class="news">
+      <p>ABOUT US</p>
+      <hr>
+    </div>
+    <div class="jumbotron">
+  <p class="lead">We are on the mission to create a healthy, green and clean planet through tree plantation. Along with our diligent greening efforts, we strive to uplift and assist the rural communities, while promoting extensive agriculture across the nation and making it a happy-green paradise.We work with a vision of developing lush-green and bio-diverse sustainable world for the future generations by igniting a huge environmental revolution through trees. With our each healthy sapling, we intend to create a repository for a rich ecological bio diverse planet.
+  </p>
+ </div>
+
+ <!-- Contact us -->
+ <div class="news">
+  <p>CONTACT US</p>
+  <hr>
+</div>
+<div class="contact">
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Name</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1"  >
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Village</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">District</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1"  >
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Reason to Contact</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1"  >
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+    </div>
+   
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Comments</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1"  >
+
+    </div>
+   
+    
+  </form>
+  <button type="button" class="btn  btn btn-success">SUBMIT</button>
+</div>
+    <!-- footer -->
+    <footer class="footer-text text-center text-success">
+
+      <div class="container p-4 pb-3">
+        
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Subscribe to our newsletter!</span>
+            <form>
+              <div>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+            </form>
+          </p>
+        </section>
+        <button type="button" class="btn btn-primary">SUBSCRIBE NOW</button>
+      </div>
+  
+  
+  
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-dark" href="">GrowGreen.org</a>
+      </div>
+  
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<style>
+  .container{
+    background-color: rgb(240, 240, 240);
+    }
+    .card{
+      margin-top: 75px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding: 0 10px;
+       border-radius: 10px;
+      background-color: #fff;
+      transition: all .4s ease-in-out;
+      box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+    }
+    .card-img-top {
+    padding:8px;
+    margin-left: 55px;
+    }
+    
+    .card:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+     background-image: linear-gradient(-45deg, #f5f5f5 0%, #ebebeb 100%);
+    }
+    
+    .nav-item:hover{
+    background-color:  rgb(240, 240, 240);
+    border-radius: 15px;
+    }
+    .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -50px;
+    flex-flow: wrap;
+    }
+    
+    .card {
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    }
+    
+    .card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+    }
+    
+    .card-body {
+    padding: 50px 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: -40px;
+    }
+    
+    .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #dcff17 ,#00ff11, #008029);
+    text-decoration: none;
+    padding: 5px 5px;
+    margin-top: 30px;
+    }
+    
+    .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    }
+    
+    @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+    }
+    
+    @media screen and (max-width: 620px) {
+    .flexcontainer {
+      width: 100%;
+    }
+    
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+    
+    .card {
+      width: 80%;
+    }
+  }
+  .lead{
+    font-weight: 400;
+    font-size: 25px;
+     
+    }
+</style>
