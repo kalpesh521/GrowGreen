@@ -13,7 +13,7 @@ background-color:  rgba(255, 255, 255, 0.699);
 }
 .news{
 margin-top: 30px;
- font-size: 30px;
+font-size: 30px;
 font-style: bold;
 font-weight: 700;
 padding-left: 55px;
@@ -80,8 +80,8 @@ font-size: 18px;
 .popup .overlay{
 position: fixed;
 top:0px;
-width: 100vw;
-height: 100vh;
+width: 300vw;
+height: 800vh;
 background-color: rgb(220, 220, 220);
 z-index: 1;
 display: none;
@@ -94,10 +94,9 @@ left: 50%;
 transform: translate(-50%,-50%) scale(0);
 background-color: rgb(255, 255, 255);
 width: 350px;
-height: 280px;
+height: 380px;
 z-index: 2;
-text-align: center;
-padding: 20px;
+ padding: 20px;
 box-sizing: border-box;
 }
 
@@ -124,12 +123,14 @@ display: block;
 transition: all 300ms ease-in-out;
 transform: translate(-50%,-50%) scale(1);
 box-shadow: 0 0 45px 0 rgba(20, 27, 202, .17);
-border-radius: 10%;
+border-radius: 4%;
 }
 #success{
 text-align: center;
-font-weight: 800;
-margin-bottom: 20px;
+font-weight: 700;
+margin-bottom: 25px;
+margin-top: 15px;
+font-size: 25px;
 }
 #placed{
 text-align: center;
@@ -137,8 +138,34 @@ font-weight: 600;
 font-size: 21px;
  
 }
+.wrap-flex { display: flex; }
+.wrap-flex { 
+  margin-left: 40px;
+  margin-top: 20px;
+  font-weight: 500;
+
+ }
+#signup{
+  margin-left: 10px;
+   
+ }
+#emailID{
+  font-weight: 500;
+font-size: 18px;
+}
+#pass{
+  font-weight: 500;
+font-size: 18px;
+}
+
+#btnsubmit{
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 280px;
+  background: linear-gradient(to right, #57f3f5 ,#b117f8, #770ca8);
 
 
+}
 #icon2{
 width: 90px;
 height: 90px;
